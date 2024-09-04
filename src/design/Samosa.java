@@ -12,12 +12,18 @@ package design;
 //3. Create field to store object is private
 
 
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
 //DRAWBACK: we have not taken threads environment into consideration.
-public class Samosa {
+public class Samosa implements Serializable {
     //using this for object creation inside getSamosa method
     private static Samosa samosa;
     //constructor
     private Samosa(){
+        if(samosa!=null){
+            throw new RuntimeException("You are trying to break singleton pattern");
+        }
     }
     //method to use samosa
     //we will be using this method to get the instance of the class
@@ -52,6 +58,7 @@ public class Samosa {
 //    }
 
     public  static  Samosa getSamosa() {
+        //object of this class
         if(samosa == null){
             //only this block of code is synchronized
             synchronized (Samosa.class){
@@ -60,6 +67,15 @@ public class Samosa {
                 }
             }
         }
+        return samosa;
+    }
+
+    public Object readResolve(){
+        return samosa;
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
         return samosa;
     }
 }
