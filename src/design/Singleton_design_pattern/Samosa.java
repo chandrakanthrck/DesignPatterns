@@ -1,4 +1,4 @@
-package design;
+package design.Singleton_design_pattern;
 //SINGLETON
 //goal: want to create one instance of this class
 //Constructor has to be private because we do not want the constructor to
@@ -12,7 +12,6 @@ package design;
 //3. Create field to store object is private
 
 
-import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 //DRAWBACK: we have not taken threads environment into consideration.

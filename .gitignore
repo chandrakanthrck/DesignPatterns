@@ -1,0 +1,57 @@
+# Ignore compiled class files
+*.class
+
+# Ignore package files
+*.jar
+*.war
+*.ear
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Ignore build output directories
+/build/
+/target/
+/out/
+
+# Ignore .impl files
+*.impl
+
+# Ignore Maven's standard directories
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Ignore IntelliJ IDEA project files
+.idea/
+/*.iml
+*.iws
+out/
+
+# Ignore Eclipse project files
+.project
+.classpath
+.settings/
+/bin/
+/tmp/
+
+# Ignore VSCode project files
+.vscode/
+
+# Ignore OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Ignore files related to Maven or Gradle
+/.mvn/
+/.gradle
+build/
+
+# Ignore JetBrains IDE related files
+.idea/
+/*.iml

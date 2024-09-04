@@ -1,7 +1,6 @@
-package design;
+package design.Singleton_design_pattern;
 
 import java.io.*;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 public class Example {
