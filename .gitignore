@@ -20,6 +20,9 @@
 /target/
 /out/
 
+# Ignore .impl files
+*.impl
+
 # Ignore Maven's standard directories
 .mvn/
 !.mvn/wrapper/maven-wrapper.jar
