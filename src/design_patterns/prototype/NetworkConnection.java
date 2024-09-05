@@ -7,15 +7,10 @@ import java.util.List;
 public class NetworkConnection implements Cloneable{
     private String ip;
     private String importantData;
-    //to understand deep copy
     private List<String> domains = new ArrayList<>();
 
     public void setIp(String ip) {
         this.ip = ip;
-    }
-
-    public void setImportantData(String importantData) {
-        this.importantData = importantData;
     }
 
     public List<String> getDomains() {
@@ -24,6 +19,10 @@ public class NetworkConnection implements Cloneable{
 
     public void setDomains(List<String> domains) {
         this.domains = domains;
+    }
+
+    public void setImportantData(String importantData) {
+        this.importantData = importantData;
     }
 
     public String getIp() {
@@ -45,24 +44,27 @@ public class NetworkConnection implements Cloneable{
 
 
     public void loadVeryImportantData() throws InterruptedException {
-        //takes about 5 mins
-        this.importantData = "Very very important data.";
-        domains.add("www.example1.com");
-        domains.add("www.example2.com");
-        domains.add("www.example3.com");
-        domains.add("www.example4.com");
-        Thread.sleep(5000);
+        this.importantData = "Very very important data";
+        domains.add("www.google.com");
+        domains.add("www.w3school.com");
+        domains.add("www.blehbleh.com");
+        Thread.sleep(2000);
     }
 
     @Override
-    public Object clone() {
+    protected Object clone() throws CloneNotSupportedException{
         //logic for cloning
         NetworkConnection networkConnection = new NetworkConnection();
+        //getting the ip and important data from already set values during the initialization
         networkConnection.setIp(this.getIp());
-        networkConnection.setIp(this.getImportantData());
+        networkConnection.setImportantData(this.getImportantData());
+        //the data in the list of domains will get copied here,
+        // so no changes will happen when we make any changes
+        //in the primary initialization
         for(String d:this.getDomains()){
             networkConnection.getDomains().add(d);
         }
+        //returning the deep copy object
         return networkConnection;
     }
 }
