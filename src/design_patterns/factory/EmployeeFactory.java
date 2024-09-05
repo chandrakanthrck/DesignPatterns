@@ -1,4 +1,4 @@
-package design.factory_design_pattern;
+package design_patterns.factory;
 
 public class EmployeeFactory {
     //get the employee

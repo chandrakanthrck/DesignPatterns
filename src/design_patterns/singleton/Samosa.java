@@ -1,4 +1,4 @@
-package design.Singleton_design_pattern;
+package design_patterns.singleton;
 //SINGLETON
 //goal: want to create one instance of this class
 //Constructor has to be private because we do not want the constructor to

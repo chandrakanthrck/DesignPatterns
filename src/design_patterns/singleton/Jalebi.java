@@ -1,4 +1,4 @@
-package design.Singleton_design_pattern;
+package design_patterns.singleton;
 
 
 //eager way of creating singleton object
