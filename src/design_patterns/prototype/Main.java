@@ -12,6 +12,7 @@ public class Main {
             NetworkConnection networkConnection2 = (NetworkConnection) networkConnection.clone();
             NetworkConnection networkConnection3 = (NetworkConnection) networkConnection.clone();
             NetworkConnection networkConnection4 = (NetworkConnection) networkConnection.clone();
+            //to test shallow and deep copies
             networkConnection.getDomains().remove(0);
             System.out.println(networkConnection);
             System.out.println(networkConnection2);

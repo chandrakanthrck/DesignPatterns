@@ -8,7 +8,7 @@ public class AdapterCharger implements  AppleCharger{
     }
 
     @Override
-    public void chargePhone() {
+    public void chargeIPhone() {
         charger.chargerAndroidPhone();
         System.out.println("Your phone is charging with adapter using android charger");
     }

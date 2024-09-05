@@ -66,5 +66,8 @@ public class NetworkConnection implements Cloneable{
         }
         //returning the deep copy object
         return networkConnection;
+        //this will give you a shallo copy, which means any changes were made after initializing will
+        //be reflecring on the cloned objects
+//        return super.clone();
     }
 }

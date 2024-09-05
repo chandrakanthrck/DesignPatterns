@@ -6,6 +6,6 @@ public class Iphone13 {
         this.appleCharger = appleCharger;
     }
     public void chargeIphone(){
-        appleCharger.chargePhone();
+        appleCharger.chargeIPhone();
     }
 }
