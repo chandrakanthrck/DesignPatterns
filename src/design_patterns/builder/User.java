@@ -1,4 +1,4 @@
-package design.builder_design_pattern;
+package design_patterns.builder;
 
 public class User {
     private final String userId;

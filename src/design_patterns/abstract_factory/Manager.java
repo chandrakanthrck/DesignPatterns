@@ -1,4 +1,4 @@
-package design.abstract_factory_design_pattern;
+package design_patterns.abstract_factory;
 
 public class Manager implements Employee{
     @Override

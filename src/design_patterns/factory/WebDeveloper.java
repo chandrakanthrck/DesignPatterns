@@ -1,6 +1,4 @@
-package design.factory_design_pattern;
-
-import design.factory_design_pattern.Employee;
+package design_patterns.factory;
 
 public class WebDeveloper implements Employee {
     @Override

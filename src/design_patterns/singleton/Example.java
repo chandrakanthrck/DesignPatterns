@@ -1,4 +1,4 @@
-package design.Singleton_design_pattern;
+package design_patterns.singleton;
 
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;
