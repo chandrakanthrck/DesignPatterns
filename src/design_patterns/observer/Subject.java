@@ -4,5 +4,5 @@ package design_patterns.observer;
 public interface Subject {
     void subscribe(Observer ob);
     void unsubscribe(Observer ib);
-    void newVideoUploaded();
+    void newVideoUploaded(String title);
 }

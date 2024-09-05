@@ -17,9 +17,9 @@ public class YouTubeChannel implements Subject{
     }
 
     @Override
-    public void newVideoUploaded() {
+    public void newVideoUploaded(String title) {
         for(Observer ob : this.subscribers){
-            ob.notified();
+            ob.notified(title);
         }
 
     }
