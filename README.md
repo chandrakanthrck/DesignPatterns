@@ -38,7 +38,6 @@ This project demonstrates the implementation of common design patterns using **J
 - **Use Case**: Useful when you need to integrate a class that doesn't match the required interface of a system.
 
 ## Project Structure
-
 The project is organized into different packages, each representing a design pattern:
 
 - `design_patterns.singleton`
